@@ -1,0 +1,21 @@
+function randomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+let randomResult = randomNumber(1, 10);
+console.log(randomResult);
+let guessNumber = parseInt(prompt("Please guess a number from 1 to 10"));
+if (guessNumber === randomResult) {
+  let finalResult = "Congrats!! Your number is true";
+  console.log(finalResult);
+} else {
+  if (guessNumber > randomResult) {
+    console.log("Your number is higher than the result");
+  } else {
+    console.log("Your number is lower than the result");
+  }
+}
+
+
+
+
+
